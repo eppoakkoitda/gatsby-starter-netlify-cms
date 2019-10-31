@@ -9,6 +9,7 @@ import BlogRoll from '../components/BlogRoll'
 export const IndexPageTemplate = ({
   image,
   title,
+  body,
   heading,
   subheading,
   mainpitch,
@@ -77,6 +78,9 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
+                  <div className="tile">
+                    <h3 className="subtitle">{body}</h3>
+                  </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
@@ -117,6 +121,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  body: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
@@ -134,6 +139,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        body={frontmatter.body}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
