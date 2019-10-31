@@ -69,13 +69,13 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
-    <PageContent className="content" content={content} />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
+                <PageContent className="content" content={content} />
                 {/* <div className="content">
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
