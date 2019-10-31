@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: エッポーのブログ
-image: /img/home.png
+image: /img/home-コピー.jpg
 heading: ああｓｓｓｓあ
 subheading: eppo's blog
 mainpitch:
