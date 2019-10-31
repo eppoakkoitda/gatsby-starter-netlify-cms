@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import BlogRoll_limit from '../components/BlogRoll_limit'
 import Content, { HTMLContent } from '../components/Content'
 
 export const IndexPageTemplate = ({
@@ -107,7 +107,7 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     最新の投稿
                   </h3>
-                  <BlogRoll />
+                  <BlogRoll_limit />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Read more
