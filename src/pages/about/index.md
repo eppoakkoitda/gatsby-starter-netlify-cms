@@ -6,6 +6,8 @@ title: プロフィール
 
 工学部の情報系の学科の大学生やってます。
 
+- - -
+
 過去のウディタ作品↓
 
 [文字列STGⅡ](http://silversecond.com/WolfRPGEditor/GameList/memberlist.cgi?view_no=0750)
