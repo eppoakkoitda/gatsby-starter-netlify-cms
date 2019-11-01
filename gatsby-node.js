@@ -21,6 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
         }
+        
       }
     }
   `).then(result => {
