@@ -11,6 +11,8 @@ $body-color: #333
 $black: #2b2523
 
 .navbar .navbar-menu
+  color: $black
+  background-color: $black
   box-shadow:none !important
 
 .content .taglist
@@ -78,8 +80,16 @@ $black: #2b2523
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
-.navbar-brand .navbar-item.logo
+.navbar-brand  
+  .navbar-item.logo
   padding: 0 1rem
+.navbar.is-transparent
+  background-color: $black
+
+//navbar overrides
+$navbar-item-color: $white-ter
+$navbar-item-hover-color: gray
+  
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
