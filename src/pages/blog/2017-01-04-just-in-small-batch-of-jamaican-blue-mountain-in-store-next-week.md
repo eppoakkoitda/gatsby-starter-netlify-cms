@@ -26,4 +26,17 @@ GitHub / GitLab / Bitbucket のリポジトリと連携することができ、�
 
 Netlify CMSというものがあります。これはWeb上でMarkdownの記述ができ、そのまま更新ができるというものです。今回はそれを使用するテンプレートを使います。
 
+以下のリンクからGitのリポジトリにそのテンプレートをfolkできます。
+
 [netlifycms.org/docs/start-with-a-template/](https://www.netlifycms.org/docs/start-with-a-template/)
+
+あとは/adminにアクセスすれば編集できます！
+
+また、CMSエディタの編集項目を追加するウィジェットも公開されているので、自分の好みで追加することもできます。
+[netlifycms.org/docs/custom-widgets/](https://www.netlifycms.org/docs/custom-widgets/)
+
+<br><br>
+
+とりあえず今はここまで。
+
+お疲れ様でした。
