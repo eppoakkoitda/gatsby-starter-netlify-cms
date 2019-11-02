@@ -19,15 +19,24 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   // const { edges: posts } = amr
-  const posts = amr.edges
+  if(amr.edges){
+    var posts = amr.edges;
+    var myPost = posts.find((v) => v.node.id === id);
+    var myIndex = posts.indexOf(myPost);
+    var maxIndex = posts.length;
+  }else{
+    var myIndex = 1;
+    var maxIndex = 2;
+  }
+  
   console.log("amr:" + amr);
   console.log("edges:" + posts);
   // console.log("id: " + id);
-  const myPost = posts.find((v) => v.node.id === id);
+  
   console.log("myPost: " + myPost);
-  const myIndex = posts.indexOf(myPost);
+  
   // console.log(myIndex);
-  const maxIndex = posts.length;
+  
   
 
   return (
