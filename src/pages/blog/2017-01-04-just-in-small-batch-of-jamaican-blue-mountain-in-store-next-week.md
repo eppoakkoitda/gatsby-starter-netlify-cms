@@ -10,4 +10,4 @@ tags:
 ---
 # GatsbyJs とは？
 
-Gatbyとは、
+GatbyJsとは、Reactを使った静的サイトジェネレータのことです。
