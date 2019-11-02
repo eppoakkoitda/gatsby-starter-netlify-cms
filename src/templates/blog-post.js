@@ -19,7 +19,7 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   // const { edges: posts } = amr
-  if("edges" in amr){ // これでエラー回避してえええええ
+  if(amr && "edges" in amr){ // これでエラー回避してえええええ
     var posts = amr.edges;
     var myPost = posts.find((v) => v.node.id === id);
     var myIndex = posts.indexOf(myPost);
