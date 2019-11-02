@@ -19,21 +19,21 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   // const { edges: posts } = amr
-  if(amr.edges){
+  if("edges" in amr){ // これでエラー回避してえええええ
     var posts = amr.edges;
     var myPost = posts.find((v) => v.node.id === id);
     var myIndex = posts.indexOf(myPost);
     var maxIndex = posts.length;
   }else{
-    var myIndex = 1;
-    var maxIndex = 2;
+    var myIndex = 0;
+    var maxIndex = 1;
   }
   
-  console.log("amr:" + amr);
-  console.log("edges:" + posts);
+  // console.log("amr:" + amr);
+  // console.log("edges:" + posts);
   // console.log("id: " + id);
   
-  console.log("myPost: " + myPost);
+  // console.log("myPost: " + myPost);
   
   // console.log(myIndex);
   
