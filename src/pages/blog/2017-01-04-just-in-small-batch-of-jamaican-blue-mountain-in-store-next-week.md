@@ -19,3 +19,11 @@ GatbyJsとは、Reactを使った静的サイトジェネレータのことで�
 静的サイトのホスティングサービスです。
 
 GitHub / GitLab / Bitbucket のリポジトリと連携することができ、リポジトリを更新すると自動でデプロイしてくれます。
+
+# つくる
+
+- - -
+
+Netlify CMSというものがあります。これはWeb上でMarkdownの記述ができ、そのまま更新ができるというものです。今回はそれを使用するテンプレートを使います。
+
+[netlifycms.org/docs/start-with-a-template/](https://www.netlifycms.org/docs/start-with-a-template/)
