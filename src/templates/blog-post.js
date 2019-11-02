@@ -18,15 +18,17 @@ export const BlogPostTemplate = ({
   amr,
 }) => {
   const PostContent = contentComponent || Content
-  const { edges: posts } = amr
+  // const { edges: posts } = amr
+  const posts = amr.edges
   console.log("amr:" + amr);
   console.log("edges:" + posts);
-  console.log("id: " + id);
+  // console.log("id: " + id);
   const myPost = posts.find((v) => v.node.id === id);
   console.log("myPost: " + myPost);
   const myIndex = posts.indexOf(myPost);
-  console.log(myIndex);
+  // console.log(myIndex);
   const maxIndex = posts.length;
+  
 
   return (
     <section className="section">
@@ -52,7 +54,7 @@ export const BlogPostTemplate = ({
             ) : null}
             <PostContent content={content} />
             <h1 />
-            <div width="100%">
+            {<div width="100%">
               {myIndex>0 &&
                 <Link className="button" to={posts[myIndex-1].node.fields.slug}>
                   ← 前の記事
@@ -61,7 +63,7 @@ export const BlogPostTemplate = ({
                 <Link className="button" to={posts[myIndex+1].node.fields.slug}>
                   次の記事 →
                 </Link>}
-            </div>
+            </div>}
             
           </div>
         </div>
