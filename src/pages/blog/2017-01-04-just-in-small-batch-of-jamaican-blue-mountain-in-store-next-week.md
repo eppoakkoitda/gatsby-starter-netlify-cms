@@ -12,4 +12,8 @@ tags:
 
 GatbyJsとは、Reactを使った静的サイトジェネレータのことです。
 
-静的サイトジェネレータは他にもHUGO、Hexo、Jekyllなどがありますが、GatsbyJsの大きな特徴は、リソースデータの取得にGraphQLを使っている点とReactを使っている点です。
+静的サイトジェネレーターは他にもHUGO、Hexo、Jekyllなどがありますが、GatsbyJsの大きな特徴は、リソースデータの取得にGraphQLを使っている点とReactを使っている点です。
+
+# Netlifyとは？
+
+静的サイトのホスティングサービスです。
