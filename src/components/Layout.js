@@ -7,11 +7,12 @@ import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
+  //document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
   const { title, description } = useSiteMetadata()
   return (
     <div>
       <Helmet>
-        <html lang="jp" />
+        <html lang="jp" overflow="hidden" />
         <title>{title}</title>
         <meta name="description" content={description} />
 
