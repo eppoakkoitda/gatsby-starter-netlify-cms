@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
-title: A beginners’ guide to brewing with Chemex
-date: 2017-01-04T15:04:10.000Z
+title: ブログページに前後のリンクをつくる
+date: 2019-11-05T10:50:00.000Z
+description: Netlifly CMS テンプレートにより作成したGatsbyJS製のブログページに前後記事のリンクを追加する方法になります。
 featuredpost: false
 featuredimage: /img/chemex.jpg
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
 tags:
   - brewing
   - chemex
