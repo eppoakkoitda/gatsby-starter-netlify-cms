@@ -48,16 +48,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        description
-        tags
-      }
-    }
+    ...
   }
 `
 ```
@@ -87,5 +78,42 @@ BlogPost.propTypes = {
       edges: PropTypes.array,
     }),
   }),
+}
+```
+
+<br>前後ページリンクの設置
+```
+export const BlogPostTemplate = ({
+  ...
+  id,
+  amr,
+}) => {
+  ...
+  if(amr && "edges" in amr){
+    var posts = amr.edges;
+    var myPost = posts.find((v) => v.node.id === id);
+    var myIndex = posts.indexOf(myPost);
+    var maxIndex = posts.length;
+  }else{
+    var myIndex = 0;
+    var maxIndex = 1;
+  }  
+
+  return (
+      ...
+            {<div width="100%">
+              {myIndex>0 &&
+                <Link className="button" to={posts[myIndex-1].node.fields.slug}>
+                  ← 前の記事
+                </Link>}
+              {myIndex<maxIndex-1 &&
+                <Link className="button" to={posts[myIndex+1].node.fields.slug}>
+                  次の記事 →
+                </Link>}
+            </div>}
+            
+      ...
+  )
+  
 }
 ```
