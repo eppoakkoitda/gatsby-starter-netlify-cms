@@ -4,7 +4,7 @@ title: ブログページに前後のリンクをつくる
 date: 2019-11-05T10:50:00.000Z
 description: Netlifly CMS テンプレートにより作成したGatsbyJS製のブログページに前後記事のリンクを追加する方法になります。
 featuredpost: false
-featuredimage: /img/noimage.svg
+featuredimage: /img/zengolink.jpg
 tags:
   - Gatsby
   - Netlify
