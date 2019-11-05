@@ -14,7 +14,7 @@ tags:
 
 # blog-post.js の編集
 
----
+- - -
 
 queryにBlogRoll.jsのqueryをコピペして追加します。
 
@@ -82,6 +82,7 @@ BlogPost.propTypes = {
 ```
 
 <br>前後ページリンクの設置
+
 ```
 export const BlogPostTemplate = ({
   ...
@@ -97,7 +98,8 @@ export const BlogPostTemplate = ({
   }else{
     var myIndex = 0;
     var maxIndex = 1;
-  }  
+  }
+  
 
   return (
       ...
@@ -117,3 +119,13 @@ export const BlogPostTemplate = ({
   
 }
 ```
+
+## 確認
+
+- - -
+
+これで以下のように前後記事へのリンクを貼ることができました。
+
+![前後記事リンク](/img/zengolink.jpg "前後記事リンク")
+
+あとはデザインをなんとかしたいですね。
