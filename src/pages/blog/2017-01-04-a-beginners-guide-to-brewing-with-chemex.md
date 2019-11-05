@@ -16,7 +16,7 @@ tags:
 
 ---
 
-queryに
+queryにBlogRoll.jsのqueryをコピペして追加します。
 
 ```
 export const pageQuery = graphql`
@@ -60,4 +60,32 @@ export const pageQuery = graphql`
     }
   }
 `
+```
+
+<br>データの取得部分を以下のように追記
+
+```
+const BlogPost = ({ data }) => {
+  ...
+  const { allMarkdownRemark: AMR } = data
+
+  return (
+    <Layout>
+      <BlogPostTemplate
+        ...
+        id={post.id}
+        amr={AMR}
+      />
+    </Layout>
+  )
+}
+
+BlogPost.propTypes = {
+  data: PropTypes.shape({
+    ...
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+  }),
+}
 ```
