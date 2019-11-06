@@ -8,7 +8,7 @@ featuredimage: /img/img_6523.png
 tags:
   - Gatsby
 ---
-ある日、スマホページで自分のブログを確認していたところ、細かい所ですが少しイラっとくる点に気づきました。
+ある日、iPhoneで自分のブログを確認していたところ、細かい所ですが少しイラっとくる点に気づきました。
 
 以下の画像を見てください。分かるでしょうか。
 
@@ -19,3 +19,26 @@ tags:
 <br>これが原因で横スクロールできてしまい、ガクガクしてしまうときがありました。
 
 なのでこれを修正します。
+
+# スタイルの追加
+
+- - -
+
+　軽く調べたところ、htmlとbodyに overflow: hidden を適用すればいいみたいです。
+
+　なのでLayout.js とall.sass に以下のようなコードを追記しました。
+
+
+Layout.js
+```
+// (Helmetタグ内)
+<body className="body" />
+<pre className="pre"/>
+```
+
+all.sass
+```
+.body
+  overflow: hidden;
+```
+
