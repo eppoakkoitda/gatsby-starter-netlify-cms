@@ -2,34 +2,20 @@
 templateKey: blog-post
 title: スマホページの横揺れ と markdownのコード表示のデザインを変える
 date: 2019-11-06T08:53:00.000Z
-description: Netlify CMS の Gastbyテンプレートで作成したウェブサイトのデザインをいじっていきたいと思います。
+description: Netlify CMS の Gastbyテンプレートで作成したウェブサイトで、少々困ったデザインになってしまったのでそれを直しました。
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
+featuredimage: /img/img_6523.png
 tags:
-  - flavor
-  - tasting
-  - test
-  - test2
+  - Gatsby
 ---
-![flavor wheel](/img/flavor_wheel.jpg)
+ある日、スマホページで自分のブログを確認していたところ、細かい所ですが少しイラっとくる点に気づきました。
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+以下の画像を見てください。分かるでしょうか。
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+右側に僅かですが、謎の余白が生まれてしまっています。
 
-## What the updates mean to you
+![yokoyure Sample](/img/img_6523.png "yokoyure Sample")
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+<br>これが原因で横スクロールできてしまい、ガクガクしてしまうときがありました。
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
-
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
-
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
-
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+なのでこれを修正します。
