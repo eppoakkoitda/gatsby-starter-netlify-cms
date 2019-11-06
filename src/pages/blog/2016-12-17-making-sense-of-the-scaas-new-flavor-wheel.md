@@ -18,7 +18,13 @@ tags:
 
 <br>これが原因で横スクロールできてしまい、ガクガクしてしまうときがありました。
 
-なのでこれを修正します。
+<br>
+
+　また、markdown のコード表示が非常に見づらいです。
+
+![OldCodeSample](/img/oldcodesample.jpg "OldCodeSample")
+
+<br>これら修正します。
 
 # スタイルの追加
 
@@ -28,17 +34,29 @@ tags:
 
 　なのでLayout.js とall.sass に以下のようなコードを追記しました。
 
+Layout.js　(Helmetタグ内)
 
-Layout.js
 ```
-// (Helmetタグ内)
 <body className="body" />
 <pre className="pre"/>
 ```
 
 all.sass
+
 ```
 .body
   overflow: hidden;
+
+.pre
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
 ```
 
+# 修正後
+
+---
+　横揺れがなくなり、コードも見やすくなりました。
