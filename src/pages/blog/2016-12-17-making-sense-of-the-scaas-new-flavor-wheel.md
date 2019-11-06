@@ -1,10 +1,8 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2016-12-17T15:04:10.000Z
-description: >-
-  The Coffee Taster’s Flavor Wheel, the official resource used by coffee
-  tasters, has been revised for the first time this year.
+title: スマホページの横揺れ と markdownのコード表示のデザインを変える
+date: 2019-11-06T08:53:00.000Z
+description: Netlify CMS の Gastbyテンプレートで作成したウェブサイトのデザインをいじっていきたいと思います。
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
 tags:
