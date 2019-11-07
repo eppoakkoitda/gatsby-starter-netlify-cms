@@ -6,7 +6,8 @@ description: Gatsby と Netlify を用いたブログ作成方法を簡単にま
 featuredpost: true
 featuredimage: /img/noimage.svg
 tags:
-  - Gatsby Netlify
+  - Gatsby
+  - Netlify
 ---
 # GatsbyJs とは？
 
