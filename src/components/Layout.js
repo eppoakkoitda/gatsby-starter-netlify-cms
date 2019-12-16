@@ -12,6 +12,7 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
+        <meta name="google-site-verification" content="D16FQLZdVebRX_3qW5mxGaoD1wftU4wD_bw5MDfRiJo" />
         <html lang="jp" overflow="hidden" />
         <title>{title}</title>
         <meta name="description" content={description} />
