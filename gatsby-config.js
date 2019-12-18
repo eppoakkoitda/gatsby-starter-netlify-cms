@@ -3,6 +3,7 @@ module.exports = {
     title: 'eppo-blog',
     description:
       'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    siteUrl: `https://eppo.netlify.com`,
   },
   plugins: [
     
@@ -80,5 +81,6 @@ module.exports = {
         trackingId: 'UA-151408038-1'
       }
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
