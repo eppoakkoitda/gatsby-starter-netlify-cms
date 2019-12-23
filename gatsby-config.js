@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'eppo-blog',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'プログラミングが趣味の学生によるブログです。Unityとかよくいじってます。ゲーム制作に役立つ情報を発信していけたらいいなとか思っています。',
     siteUrl: `https://eppo.netlify.com`,
   },
   plugins: [
