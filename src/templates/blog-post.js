@@ -38,7 +38,6 @@ export const BlogPostTemplate = ({
   
   // console.log(myIndex);
   
-  
 
   return (
     <section className="section">
@@ -96,6 +95,8 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
   const { allMarkdownRemark: AMR } = data
 
+  // console.log(post);
+
   return (
     <Layout>
       <BlogPostTemplate
@@ -109,6 +110,7 @@ const BlogPost = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description}`}
             />
+            <meta property="og-image" content={`${post.frontmatter.featuredimage.absolutePath}`}/>
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -168,6 +170,9 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+          absolutePath
+        }
       }
     }
   }
