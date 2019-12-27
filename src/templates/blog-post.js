@@ -95,7 +95,7 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
   const { allMarkdownRemark: AMR } = data
 
-  console.log(`${post.frontmatter.featuredimage.publicURL}`);
+  // console.log(`${post.frontmatter.featuredimage.publicURL}`);
 
   return (
     <Layout>
@@ -110,7 +110,7 @@ const BlogPost = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description}`}
             />
-            <meta property="og-image" content={`https://eppo.netlify.com${post.frontmatter.featuredimage.publicURL}`}/>
+            <meta property="og-image" content={`/img/${post.frontmatter.featuredimage.base}`}/>
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -171,7 +171,7 @@ export const pageQuery = graphql`
         description
         tags
         featuredimage {
-          publicURL
+          base
         }
       }
     }
