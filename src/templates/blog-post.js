@@ -95,8 +95,6 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
   const { allMarkdownRemark: AMR } = data
 
-  // console.log(post);
-
   return (
     <Layout>
       <BlogPostTemplate
