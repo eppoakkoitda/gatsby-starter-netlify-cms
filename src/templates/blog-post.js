@@ -95,6 +95,8 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
   const { allMarkdownRemark: AMR } = data
 
+  console.log(`${post.frontmatter.featuredimage.publicURL}`);
+
   return (
     <Layout>
       <BlogPostTemplate
@@ -108,7 +110,7 @@ const BlogPost = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description}`}
             />
-            <meta property="og-image" content={`${post.frontmatter.featuredimage.absolutePath}`}/>
+            <meta property="og-image" content={`${post.frontmatter.featuredimage.publicURL}`}/>
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -169,7 +171,7 @@ export const pageQuery = graphql`
         description
         tags
         featuredimage {
-          absolutePath
+          publicURL
         }
       }
     }
