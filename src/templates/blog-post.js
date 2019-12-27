@@ -110,7 +110,7 @@ const BlogPost = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description}`}
             />
-            <meta property="og-image" content={`${post.frontmatter.featuredimage.publicURL}`}/>
+            <meta property="og-image" content={`https://eppo.netlify.com${post.frontmatter.featuredimage.publicURL}`}/>
           </Helmet>
         }
         tags={post.frontmatter.tags}
