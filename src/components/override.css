@@ -6,3 +6,31 @@ blockquote{
   margin: 1.5em 0 !important;
   font-size: 17.5px !important;
 }
+
+.youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #CCC;
+}
+ 
+th, td {
+  padding: 5px 10px;
+  border: 1px solid #CCC;
+}
+ 
+th {
+  background: #EEE;
+}
