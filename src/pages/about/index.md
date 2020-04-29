@@ -17,6 +17,15 @@ title: プロフィール
 - VR技術者
 <br>
 
+## Unity作品
+
+---
+
+[好きなVRMを読み込んで好きな弾を撃つ3Dシューティング](https://eppo.netlify.app/blog/2020-02-04【Unity】VRMファイルを読み込んでオリジナルの弾幕を張るゲーム開発中/)
+
+[時間を巻き戻せる移動システム](https://youtu.be/cBRV9oylZn4)（動画のみ）
+<br>
+
 ## 過去のウディタ作品
 
 ---
